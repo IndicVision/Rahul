@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>3D_Online_Measurement_Portal</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div id="header">
+    <!-- <h1>"HealWell - Doctor's Portal"</h1> -->
+    </div>
+    <div id="loader">Loading...</div>
+    <div id="mainContainer">
+    <div id="videoPopup" class="modal">
+        <span class="close" onclick="closeVideoPopup()">&times;</span>
+        <iframe src="./models/video.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+      <div id="doctorInputPopup" class="modal">
+        <div class="modal-content">
+          <input type="text" id="Patient's Name" placeholder="Patient's Name">
+          <br>
+          <input type="text" id="Surgeon's Name" placeholder="Surgeon's Name">
+          <br>
+          <select id="Wagner Classification">
+              <option value="">Select Wagner Classification</option>
+              <option value="Grade 0">Grade 0 - Skin intact but bony deformities lead to "foot at risk"</option>
+              <option value="Grade 1">Grade 1 - Superficial ulcer</option>
+              <option value="Grade 2">Grade 2 - Deeper, full thickness extension</option>
+              <option value="Grade 3">Grade 3 - Deep abscess formation or osteomyelitis</option>
+              <option value="Grade 4">Grade 4 - Partial Gangrene of forefoot</option>
+              <option value="Grade 5">Grade 5 - Extensive Gangrene</option>
+          </select>
+          <br>
+          <input type="text" id="Plan" placeholder="Plan">
+          <br>
+          <input type="text" id="Comments" placeholder="Comments">
+          <button id="saveButton">Save</button>
+          <button class="close-button">Close</button>
+        </div>
+      </div>
+        <div id="buttonContainer">
+            <button id="VideoPreview"><span class="hidden-text">Vidoe Preview</span><img src="./assets/video.svg"  alt="Symbol 1" width="32" height="32" title="Video Preview"></button>
+            <button id="DoctorInput"><span class="hidden-text">Surgeon's Input</span><img src="./assets/text.svg"  alt="Symbol 1" width="32" height="32" title="Surgeon's Input"></button>
+            <button id="distancebutton"><span class="hidden-text">Measure Distance</span><img src="./assets/measure.svg"  alt="Symbol 1" width="32" height="32" title="Measure Distance"></button>
+            <!-- <button id="infobutton">Point Info</button> -->
+            <button id="clearbutton"><span class="hidden-text">Clear</span><img src="./assets/clear.svg"  alt="Symbol 1" width="32" height="32" title="Clear"></button>
+        </div>
+    <div id="info"></div>
+    <div id="container"></div>
+    </div>
+
+<script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+<script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.119.1/build/three.module.js"
+    }
+  }
+</script>
+<script src = "./js/dependencies/ui.js"> </script>
+<script type = 'module' src = "js/main.js"> </script>
+
+</body>
+</html>

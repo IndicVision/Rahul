@@ -1,0 +1,10 @@
+Patient's Name: vbn
+Surgeon's Name: vbn
+Time at Presentation (TIP): Recurrent (recurrence after complete healing)
+Type at Presentation (TYP): Multiple sites (on the same foot); Bilateral
+Status of the Skin/Ulcer (SSU): White (fungal); White (acute on chronic); Osteomyelitis (soddening)
+Status of the Foot (SF): Ischemic; Ischemic reversed score 0
+Status of Diabetes Mellitus (SDM): Well-controlled, HbA1c < 7
+Status of the Organ System (SOS): HEART: Myocardial Infarction; Cardiac Myopathy
+Plan: debridement
+Comments: antibiotics to continue

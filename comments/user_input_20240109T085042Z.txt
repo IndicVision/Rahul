@@ -1,0 +1,10 @@
+Patient's Name: cvare
+Surgeon's Name: vaf
+Time at Presentation (TIP): option1
+Type at Presentation (TYP): option1
+Status of the Skin/Ulcer (SSU): option1
+Status of the Foot (SF): option1
+Status of Diabetes Mellitus (SDM): option1
+Status of the Organ System (SOS): option1
+Plan: avf
+Comments: vafva

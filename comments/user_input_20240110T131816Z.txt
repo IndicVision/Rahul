@@ -1,0 +1,10 @@
+Patient's Name: casd
+Surgeon's Name: ascdc
+Time at Presentation (TIP): Non-Acute
+Type at Presentation (TYP): Normal foot; Foot at risk
+Status of the Skin/Ulcer (SSU): Normal (pinkish white)
+Status of the Foot (SF): Normal
+Status of Diabetes Mellitus (SDM): Not known
+Status of the Organ System (SOS): Not affected
+Plan: cdsv
+Comments: DDV Z

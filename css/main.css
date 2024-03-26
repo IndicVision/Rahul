@@ -1,0 +1,293 @@
+body {
+	margin: 0;
+	background-color: #7d1d1d;
+	color: #878484;
+	font-family: sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+	overscroll-behavior: none;
+}
+
+button:hover {
+	background-color: #000;
+	color: #fff;
+  }
+
+button:active {
+    background-color: #333;
+    color: #fff;
+}
+
+a {
+	color: rgb(7, 7, 0);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+button {
+	cursor: pointer;
+	text-transform: uppercase;
+	transition: background-color 0.3s ease;
+}
+
+#info {
+	/* position: absolute;
+	top: 0px; */
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	text-align: center;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	pointer-events: none;
+	z-index: 1; /* TODO Solve this in HTML */
+}
+
+a, button, input, select {
+	pointer-events: auto;
+}
+
+.lil-gui {
+	z-index: 2 !important; /* TODO Solve this in HTML */
+}
+
+@media all and ( max-width: 640px ) {
+	.lil-gui.root { 
+		right: auto;
+		top: auto;
+		max-height: 50%;
+		max-width: 80%;
+		bottom: 0;
+		left: 0;
+	}
+}
+
+#overlay {
+	/* position: absolute; */
+	font-size: 16px;
+	z-index: 2;
+	/* top: 0; */
+	/* left: 0; */
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background: rgba(0,0,0,0.7);
+}
+
+#overlay button {
+		background: transparent;
+		border: 0;
+		border: 1px solid rgb(255, 255, 255);
+		border-radius: 4px;
+		color: #ffffff;
+		padding: 12px 18px;
+		text-transform: uppercase;
+		cursor: pointer;
+	}
+
+#notSupported {
+	width: 50%;
+	margin: auto;
+	background-color: #f00;
+	margin-top: 20px;
+	padding: 10px;
+}
+
+#menu {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	width: 100%;
+  }
+
+#buttonContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	align-self: center;
+  }
+
+#videoPopup {
+	display: none;
+	position: fixed;
+	z-index: 9999;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.9);
+}
+
+#videoPopup iframe {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 80%;
+	height: 80%;
+}
+
+#videoPopup .close {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	color: #fff;
+	font-size: 40px;
+	cursor: pointer;
+}
+
+#doctorInputPopup {
+	display: none;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+	background-color: #fff;
+	padding: 0;
+	border-radius: 5px;
+	box-sizing: border-box;
+	overflow-y: visible; /* Add a scrollbar if the content is too tall */
+	max-height: 100vh; /* Limit the height to the height of the viewport */
+	transform: none; /* Remove the transform property */
+  }
+
+  .modal-content {
+	position: relative;
+	padding: 10px;
+	background-color: #fefefe;
+	margin: 0 auto;
+	border: 1px solid #888888;
+	border-radius: 5px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+	width: 100%; /* Make the popup take the full width */
+	/* max-width: 400px;  Limit the width of the popup */
+  }
+  
+  .modal-content input[type="text"] {
+	width: 100%;
+	padding: 12px;
+	margin: 12px 0;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background-color: #fff;
+	font-size: 14px;
+  }
+
+@media screen and (min-width: 768px) {
+	/* On screens that are 768px or wider, display the popup in the center of the screen */
+	#doctorInputPopup {
+	  top: 50%;
+	  left: 20%;
+	  transform: translate(-50%, -50%);
+	  max-width: 410px; /* Limit the width of the popup */
+	  /* max-height: 80vh;  Limit the height to 80% of the viewport height */
+	}
+  }
+
+.hidden-text {
+	display: none; /* Hide the text by default */
+  }
+
+#VideoPreview{
+	background-color: #f8f9f8;
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: background-color 0.3s;
+  }
+
+#VideoPreview:active, #DoctorInput:active, #distancebutton:active, #clearbutton:active {
+    background-color: #333;
+    color: #fff;
+}
+
+#DoctorInput{
+	background-color: #f8f9f8;
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: background-color 0.3s;
+  }
+
+#distancebutton{
+	background-color: #f8f9f8;
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: background-color 0.3s;
+  }
+
+#clearbutton{
+	background-color: #f8f9f8;
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: background-color 0.3s;
+  }
+
+input[type="text"], select {
+	width: 100%;
+	padding: 12px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background-color: #fff;
+	font-size: 14px;
+	color: rgb(0, 0, 0);
+	font-family: 'Poppins', sans-serif;
+  }
+
+#mainContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh; /* This will make the container take up the full height of the viewport */
+  }
+
+#loader {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	/* Add more styles as needed */
+  }
